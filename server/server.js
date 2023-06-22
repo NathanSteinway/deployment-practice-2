@@ -9,4 +9,8 @@ app.use(cors())
 
 app.use(express.static(`${__dirname}/public`))
 
+app.get('/', (req,res) => {
+    res.status(200).sendFile(path.join(__dirname,'../public/index.html'))
+})
+
 app.listen(4000, () => console.log("Wh-Wha? What time is it?"))
