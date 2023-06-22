@@ -1,5 +1,5 @@
 const express = require('express')
-const cors = require('cors)')
+const cors = require('cors')
 const path = require('path')
 
 const app = express()
@@ -7,4 +7,6 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.use(express.static('public'))
+app.use(express.static(`${__dirname}/public`))
+
+app.listen(4000, () => console.log("Wh-Wha? What time is it?"))
