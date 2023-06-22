@@ -1,4 +1,4 @@
-const schnoz = document.querySelector('img')
+const schnoz = document.getElementById('pushBtn')
 const schnozPush = document.querySelector('button')
 
 const welcome = evt =>{
