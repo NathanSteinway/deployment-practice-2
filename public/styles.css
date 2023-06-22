@@ -5,3 +5,12 @@ body {
     align-items: center;
     font-family: sans-serif;
 }
+
+img {
+    height: 500px;
+    width: 600px;
+}
+
+button {
+    margin-top: 25px;
+}

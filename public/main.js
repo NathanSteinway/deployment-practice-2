@@ -1,15 +1,20 @@
-const schnoz = document.getElementById('pushBtn')
-const schnozImg = document.getElementByClassName('img')
-const schnozPush = document.querySelector('button')
+const bullyButton = document.getElementById('pushBtn')
+const learnButton = document.getElementById('eduBtn')
+const schnoz = document.getElementById('schnoz')
+const title = document.querySelector('h1')
 
-const push = evt =>{
 
-    let schnozImgSrc = schnozImg.src
+const push = () => {
 
-    schnozImgSrc.textContent = "https://cdn.discordapp.com/attachments/600925351329136651/1120755561248608357/chrome_mk82XG1TqJ.png"
-
-    alert('How could you?')
+    title.innerHTML = "How could you?"
+    schnoz.setAttribute('src', 'https://cdn.discordapp.com/attachments/600925351329136651/1120755561248608357/chrome_mk82XG1TqJ.png')
 
 }
 
-schnozPush.addEventListener('click', push)
+const learn = () => {
+
+}
+
+
+bullyButton.addEventListener('click', push)
+learnButton.addEventListener('click', learn)
